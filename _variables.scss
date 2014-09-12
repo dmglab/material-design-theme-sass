@@ -33,8 +33,14 @@ $layout-breakpoint-md:     960px !default;
 $layout-breakpoint-lg:     1200px !default;
 $layout-gutter-width:      ($baseline-grid * 2) !default;
 
+// Toast
+//--------------------------------------------
+$toast-height: $baseline-grid * 3;
+$toast-margin: $baseline-grid * 1;
 
-// Button variables
+
+// Button
+//--------------------------------------------
 $button-border-radius: 3px;
 $button-disabled-background: rgb(234, 234, 234);
 $button-disabled-color: rgb(168, 168, 168);
@@ -54,7 +60,7 @@ $button-fab-width: 56px;
 $button-fab-height: 56px;
 $button-fab-border-radius: 28px;
 $button-fab-padding: 16px;
-$button-fab-zindex: 2;
+$button-fab-toast-offset: $toast-height + $toast-margin;
 
 // App bar variables
 $app-bar-height: 64px;
@@ -62,7 +68,7 @@ $app-bar-height: 64px;
 // Toolbar variables
 $toolbar-tools-height: 64px;
 $toolbar-height: 64px;
-$toolbar-medium-tall-height: 128px;
+$toolbar-medium-tall-height: 88px;
 $toolbar-tall-height: 192px;
 $toolbar-indent-margin: 64px;
 
@@ -103,15 +109,14 @@ $item-padding-bottom: 0px;
 
 $card-border-radius: 2px;
 $card-border: 1px solid #eee;
-$card-padding: 10px;
-$card-margin: 10px;
+$card-padding: 8px;
+$card-margin: 8px;
 $card-box-shadow: $whiteframe-shadow-z1;
 
-// Tiles
-
-$tile-border-radius: 2px;
-$tile-padding: 10px;
-$tile-margin: 10px;
+// Tabs
+$tabs-paginator-width: $baseline-grid * 4 !default;
+$tabs-tab-width: $baseline-grid * 12 !default;
+$tabs-header-height: 48px;
 
 // Forms and inputs
 
@@ -132,6 +137,9 @@ $input-focused-scale: 0.85;
 
 $input-label-transition: all ease-out 300ms;
 
+$input-border-color: #6D6D6D;
+$input-disabled-border-color: #a0a0a0;
+$input-focused-border-color: $text-dark;
 
 // Slider
 //--------------------------------------------
@@ -141,6 +149,11 @@ $slider-height:  30px;
 $slider-track-height:  2px;
 $slider-thumb-width:  10px;
 $slider-thumb-height:  $slider-thumb-width;
+
+// Switch
+//--------------------------------------------
+
+$switch-width: $baseline-grid * 8;
 
 
 // Checkbox
@@ -160,5 +173,7 @@ $radio-height: $radio-width;
 //--------------------------------------------
 
 $z-index-dialog: 10;
-$z-index-sidenav: 9;
-$z-index-backdrop: 8;
+$z-index-toast: 9;
+$z-index-sidenav: 8;
+$z-index-backdrop: 7;
+$z-index-fab: 2;
